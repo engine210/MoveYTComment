@@ -1,0 +1,12 @@
+{
+  "name": "MoveYTComment",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Swap comment and recommended video position in youtube",
+  "content_scripts": [{
+    "matches": ["*://*.youtube.com/*"],
+    "js": ["content.js"],
+    "css": ["styles.css"],
+    "run_at": "document_end"
+  }]
+}
